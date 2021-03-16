@@ -3,6 +3,7 @@ table! {
         id -> Int4,
         question -> Varchar,
         options -> Varchar,
+        owner -> Nullable<Int4>,
     }
 }
 
@@ -22,6 +23,7 @@ table! {
     }
 }
 
+joinable!(polls -> users (owner));
 joinable!(responses -> polls (poll_id));
 joinable!(responses -> users (user_id));
 
