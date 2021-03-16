@@ -1,5 +1,5 @@
+use diesel::pg::PgConnection;
 use diesel::prelude::*;
-use diesel::{Connection, PgConnection};
 use std::env;
 
 #[macro_use]
