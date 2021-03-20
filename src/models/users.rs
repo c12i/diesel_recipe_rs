@@ -13,7 +13,7 @@ impl User {
     }
 }
 
-#[derive(Insertable, Queryable)]
+#[derive(Insertable, Queryable, Debug)]
 #[table_name = "users"]
 pub struct NewUser<'a> {
     name: &'a str,

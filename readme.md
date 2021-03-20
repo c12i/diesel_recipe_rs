@@ -1,6 +1,7 @@
 # working with databases in Rust
 
 What is covered:
+
 1. Using Diesel ORM
 2. Building command-line tools with clap
 
@@ -21,6 +22,7 @@ diesel migration run
 ## CLI
 
 `--help | -h`
+
 ```shell
 diesel_patches 0.1.0
 Collins Muriuki <murerwacollins@gmail.com>
@@ -34,13 +36,17 @@ FLAGS:
     -V, --version    Prints version information
 
 SUBCOMMANDS:
-    help        Prints this message or the help of the given subcommand(s)
-    new_user    Creates a new user
+    help          Prints this message or the help of the given subcommand(s)
+    new_poll      Creates a new poll
+    new_user      Creates a new user
+    view_polls    Views Polls
+    view_users    Views Users
 ```
 
 `new_user`
+
 ```shell
-diesel_database_recipes-new_user 
+diesel_database_recipes-new_user
 Creates a new user
 
 USAGE:
